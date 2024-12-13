@@ -18,7 +18,7 @@ class _SharedpreferenceState extends State<Sharedpreferenceexample>{
   loadCounter()async{
     SharedPreferences prefs=await SharedPreferences.getInstance();
     setState(() {
-      prefs.getInt("count")?? 0;
+      Count=prefs.getInt("count")?? 0;
     });
   }
 
